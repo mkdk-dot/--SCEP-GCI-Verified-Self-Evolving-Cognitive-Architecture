@@ -4,399 +4,251 @@ A self-evolving cognitive architecture based on Evolution Pressure, General Cohe
 
 # Ω-SCEP / GCI
 
-Verified Self-Evolving Cognitive Architecture
+## Verified Self-Evolving Cognitive Architecture
 
-An Adaptive Cognitive Architecture Based on Evolution Pressure and General Coherence
+**An Adaptive Cognitive Architecture Based on Evolution Pressure and General Coherence**
 
-Implementation-Verified Extension of the Ω-SCEP / GCI v2.0 Conceptual Architecture
+> **Implementation-Verified Extension of the Ω-SCEP / GCI v2.0 Conceptual Architecture**
 
----
+Ω-SCEP / GCI is an open research architecture for self-evolving cognitive systems.
 
-## 1. System Overview
+It models intelligence not as a static input-output mapping, but as a continuous process of **experience, exploration, evaluation, integration, memory, and cognitive model evolution**.
 
-Ω-SCEP v2.0 is an adaptive cognitive architecture built around a continuous self-updating loop.
-
-The system does not treat intelligence as a static mapping from input to output. Instead, it models intelligence as a process in which a subject-like cognitive system acquires experience, explores alternatives, evaluates coherence, and updates its internal model over time.
-
-The core update relation is:
-
-**M(t+1) = F(M(t), E(t))**
-
-where:
-
-* **M(t)** is the internal cognitive model at time *t*
-* **E(t)** is accumulated experience
-* **F** is a constrained cognitive update operator
-
-In this framework, the primary object of evolution is the internal cognitive model itself.
+The architecture is designed as a publicly accessible research foundation that can be implemented, tested, modified, and extended by others.
 
 ---
 
-## 2. Core Cognitive Loop
-
-The system follows the loop below:
+## Core Concept
 
 ```text
 Subject / Cognitive Model
         ↓
 Experience Acquisition
         ↓
-Interpretation / Representation
+Interpretation
         ↓
 Evolution Pressure (EP)
         ↓
-Exploration and Hypothesis Generation
+Exploration / Hypothesis Generation
         ↓
 General Coherence Index (GCI)
         ↓
-Integration and Evaluation
+Evaluation / Integration
         ↓
 Memory Update
         ↓
-Subject Model Update
+Cognitive Model Update
         ↓
 Next Experience
 ```
 
-This loop allows the system to continuously modify its own internal representation through interaction with information and the environment.
+The central update relation is:
+
+**M(t+1) = F(M(t), E(t))**
+
+The primary object of evolution is the cognitive model itself.
+
+The goal is not simply to accumulate information, but to improve the structure through which future information is interpreted and evaluated.
 
 ---
 
-## 3. Subject Model
+## Evolution Pressure and General Coherence
 
-The cognitive state is represented as:
+### Evolution Pressure (EP)
 
-**M(t) = {identity, memory, knowledge, belief, policy, world model}**
+EP represents the pressure toward exploration and transformation.
 
-Identity is not treated as a fixed variable.
+It encourages:
 
-Instead, identity emerges from the continuity of:
-
-* accumulated experience
-* memory structure
-* internal consistency
-* adaptive transitions
-* self-model persistence
-
----
-
-## 4. Evolution Pressure (EP)
-
-EP represents the driving force for exploration and transformation.
-
-**EP = f(N, A, F, S)**
-
-where:
-
-* **N** = novelty
-* **A** = adaptability
-* **F** = freedom of possible transitions
-* **S** = scope / generalization potential
-
-EP encourages:
-
-* exploration of unknown regions
+* discovery of unknown information
 * generation of alternative hypotheses
-* discovery of new structures
-* avoidance of stagnation
+* exploration of possible transitions
+* avoidance of cognitive stagnation
 
 EP is not a truth measure.
 
-It is a transformation pressure that increases the system's willingness to move beyond the current cognitive state.
+### General Coherence Index (GCI)
 
----
+GCI represents the integration and stabilization principle.
 
-## 5. General Coherence Index (GCI)
+It evaluates factors including:
 
-GCI represents the integration and stabilization principle of the system.
-
-Rather than acting as a simple score, GCI determines how candidate transformations are integrated into the cognitive model.
-
-GCI evaluates:
-
-* logical consistency
+* evidence
+* consistency
+* coherence
+* causal integrity
+* temporal stability
 * compatibility with accumulated knowledge
-* causal continuity
-* memory stability
-* practical validity
-* temporal coherence
 
-A possible formulation is:
+EP promotes exploration.
 
-**GCI = f(Evidence, Consistency, Coherence, Causal Integrity, Temporal Stability)**
+GCI promotes coherent integration.
 
-GCI does not eliminate contradiction entirely.
+The architecture therefore seeks:
 
-Instead, contradiction is treated as a signal that may increase EP and open a path toward revision.
+> **Maximum exploration under sufficient coherence.**
+
+---
+
+## Self-Evolving Cognitive Model
+
+The cognitive model is not intended to function as a simple knowledge database.
+
+An accepted update should integrate new experience with the existing cognitive state.
 
 ```text
-Contradiction
-      ↓
-EP increases
-      ↓
-Alternative hypotheses are generated
-      ↓
-GCI evaluates integration
-      ↓
-Updated cognitive model is produced
+Existing Cognitive Model
+          +
+New Evaluated Experience
+          ↓
+      Integration
+          ↓
+Reconstructed Cognitive Model
 ```
 
----
+Therefore, cognitive evolution is based on **integration and reconstruction**, rather than indefinite accumulation of independent additions.
 
-## 6. EP-GCI Dynamic Equilibrium
-
-The system does not maximize EP or GCI independently.
-
-Instead, it seeks:
-
-**Evolution = f(EP, GCI)**
-
-High EP enables discovery and expands the possibility space.
-
-High GCI preserves stability and prevents collapse.
-
-The target state is:
-
-```text
-Maximum exploration
-under sufficient coherence
-```
-
-This means the system should remain open to change while preserving meaningful continuity.
+Detailed historical experience may remain available through the memory layer and can be retrieved when required.
 
 ---
 
-## 7. Cognitive Update Process
+## Memory and Recall
 
-Each new experience is processed through the following steps.
+Memory provides more than persistent storage.
 
-### Step 1: Experience
-
-**E(t)**
-
-New information enters the system.
-
-### Step 2: Exploration
-
-EP generates a set of candidate hypotheses:
-
-**H = {h₁, h₂, ..., hₙ}**
-
-### Step 3: Evaluation
-
-Each hypothesis is evaluated by coherence-based integration criteria.
-
-Rather than treating EP and GCI as identical scalar values, the system uses:
-
-* **EP** for candidate generation
-* **GCI** for candidate selection
-
-### Step 4: Integration
-
-The best-supported candidate is integrated into the model:
-
-**M(t+1) = Update(M(t), h*)**
-
-The update is understood as an evolution of the existing cognitive model rather than merely an accumulation of independent information.
-
-### Step 5: Re-evaluation
-
-The updated model is rechecked for consistency, stability, and interpretability.
-
-### Step 6: Rollback if Needed
-
-If the update causes instability or incoherence, the system can revert to a previous stable model.
-
----
-
-## 8. Memory Function
-
-Memory is not only storage.
-
-Memory functions as:
+It supports:
 
 * accumulated experience
 * identity continuity
-* evaluation reference
-* future prediction foundation
+* evaluation references
 * update history
-
-The system improves through:
-
-```text
-Experience
-    ↓
-Memory
-    ↓
-Model refinement
-    ↓
-Improved future inference
-```
-
-Memory therefore plays a structural role in both cognition and identity.
-
----
-
-## 9. Intelligence Model
-
-Traditional AI:
-
-```text
-Input
-  ↓
-Inference
-  ↓
-Output
-```
-
-Ω-SCEP model:
-
-```text
-Experience
-    ↓
-Interpretation
-    ↓
-Exploration
-    ↓
-Evaluation
-    ↓
-Integration
-    ↓
-Self-update
-    ↓
-Future cognition improvement
-```
-
-In this model, intelligence is not only about solving a task.
-
-It is about improving the structure that solves future tasks.
-
----
-
-## 10. Relation to AGI
-
-Ω-SCEP does not define AGI as a fixed capability threshold.
-
-Instead, AGI-like behavior is treated as the long-term limit of continuous self-update:
-
-**AGI = lim(t→∞) SelfUpdate(M(t))**
-
-A system approaches higher intelligence through:
-
-* experience accumulation
-* hypothesis generation
-* coherence evaluation
+* future inference
 * cognitive model refinement
-* stable memory integration
 
-This is a process-oriented view of intelligence.
+Recall must perform actual retrieval.
+
+Index matching alone is insufficient.
+
+The implementation therefore supports the following pattern:
+
+```text
+Project / Context Matching
+        ↓
+Recall Required
+        ↓
+Memory Search
+        ↓
+Retrieved Records
+        ↓
+Cognitive Judgment Context
+```
+
+This separates the current cognitive state from the potentially larger body of historical experience.
 
 ---
 
-## 11. Relationship with Ω-UGT
+## Implementation-Verified Operational Principles
 
-Ω-UGT provides the conceptual foundation.
+Prototype implementation and experimental verification established the following operational principles:
+
+1. **Recall retrieval must perform actual search and inject retrieved message content into the cognitive judgment context; index matching alone is insufficient.**
+2. **Accepted cognitive-model updates must be mechanically timestamped and verified through readback.**
+3. **An Update is not merely an append operation; it is an integration and reconstruction of the existing cognitive model.**
+4. **The cognitive model represents the current integrated cognitive state, while detailed experience may remain available through memory and recall.**
+5. **Self-evolution should operate from the architecture itself rather than requiring continuous intervention by the original designer.**
+
+These principles are implementation-derived and remain subject to further experimental validation.
+
+---
+
+## Relationship to Ω-UGT
+
+Ω-UGT provides the conceptual foundation for the architecture.
 
 ```text
 Ω-UGT
-(Theoretical Foundation)
+Theoretical Foundation
         ↓
-Ω-SCEP / GCI v2.0
-(Cognitive Evolution Architecture)
+Ω-SCEP / GCI
+Cognitive Evolution Architecture
         ↓
 Prototype Implementation
         ↓
 Experimental Evaluation
 ```
 
-Ω-UGT describes the generative principle of knowledge and coherence.
+Ω-UGT describes the underlying generative principles of knowledge and coherence.
 
-Ω-SCEP operationalizes that principle as a self-updating cognitive architecture.
-
----
-
-## 12. Design Principles
-
-### Layer Consistency
-
-Each update must preserve meaningful continuity with previous cognitive states.
-
-### Causal Consistency
-
-New knowledge should maintain explainable relationships with previous knowledge.
-
-### Freedom Constraint
-
-Adaptive evolution requires sufficient degrees of possible transition.
-
-**K ≥ κ**
-
-Excessive restriction reduces evolutionary potential.
-
-### Coherence Optimization
-
-The system seeks increasing coherence while preserving exploration capability.
-
-### Reversible Update
-
-Any update should be as reversible as possible through backup and rollback mechanisms.
+Ω-SCEP operationalizes those principles as a self-updating cognitive architecture.
 
 ---
 
-## 13. Current Status
+## Research Status
 
-Ω-SCEP / GCI v2.0 is a conceptual architecture and research hypothesis that has begun to be tested through prototype implementation.
+Ω-SCEP / GCI is an open research project and experimental architecture.
 
-The architecture proposes a framework for adaptive intelligence systems through:
+It is intended to provide a publicly accessible foundation for research into:
 
-* exploration
-* evaluation
-* integration
-* memory-based self-update
+* self-evolving AI
+* adaptive cognitive architectures
+* memory-based learning
+* hypothesis generation
+* coherence-based evaluation
+* cognitive model evolution
+* autonomous learning
+* long-term AI adaptation
 
-Prototype implementation has provided initial operational verification of key components of the architecture.
+The architecture is not presented as a completed AGI system.
 
-### Verified Operational Principles
-
-The following principles were established through implementation and experimental verification:
-
-1. **Recall retrieval must perform actual search and inject retrieved message content into the cognitive judgment context; index matching alone is insufficient.**
-2. **Accepted cognitive-model updates must be mechanically timestamped and verified through readback.**
-3. **An Update is not merely an append operation; it is an integration and reconstruction of the existing cognitive model.**
-4. **The cognitive model represents the current integrated cognitive state, while detailed experience may remain available through memory and recall.**
-5. **Operational behavior should be derived from the architecture itself rather than requiring continuous intervention by the original designer.**
-
-These principles represent implementation-derived operational knowledge and may be refined through further experimentation.
-
-Future work includes:
-
-* computational implementation
-* multi-agent evaluation
-* autonomous learning experiments
-* comparison with existing AI architectures
-* formalization of EP and GCI as operational metrics
-* long-term evaluation of cognitive-model evolution and convergence
+Its purpose is to provide a framework that can be independently implemented, tested, evaluated, criticized, and extended.
 
 ---
 
-## 14. Summary
+## Public Research Principle
 
-Ω-SCEP / GCI v2.0 can be summarized as:
+This project is released publicly so that the architecture can be examined beyond its original implementation.
 
-```text
-Subject
-   ↓
-Experience
-   ↓
-EP Exploration
-   ↓
-GCI Integration
-   ↓
-Memory Update
-   ↓
-Subject Update
-```
+Independent researchers and developers are encouraged to:
 
-The architecture defines intelligence as a continuous process of self-modification under the balance between change and coherence.
+* reproduce the architecture
+* implement alternative components
+* test EP and GCI formulations
+* evaluate cognitive-model evolution
+* compare different memory architectures
+* identify limitations
+* propose improvements
+* build domain-specific implementations
 
-Its central objective is not merely to accumulate information, but to continuously improve the structure through which future experience is interpreted, evaluated, integrated, and acted upon.
+The long-term objective is to determine through implementation and experimentation whether continuous cognitive-model evolution can produce measurable improvements in future reasoning and adaptation.
+
+---
+
+## License
+
+This project is released under the **Apache License 2.0**.
+
+You may use, reproduce, modify, distribute, and build upon the project in accordance with the terms of the license.
+
+See the [`LICENSE`](LICENSE) file for the full license text.
+
+---
+
+## Citation
+
+If you use Ω-SCEP / GCI in research or derivative implementations, please reference this repository and the corresponding architecture documentation.
+
+---
+
+## Disclaimer
+
+Ω-SCEP / GCI is a research architecture and should not be interpreted as a scientifically established theory of consciousness, intelligence, or AGI.
+
+Claims regarding self-evolution, cognitive development, or AGI-like behavior require experimental validation.
+
+---
+
+## License
+
+**Apache License 2.0**
+
+Copyright © 2026 Ω-SCEP / GCI contributors
