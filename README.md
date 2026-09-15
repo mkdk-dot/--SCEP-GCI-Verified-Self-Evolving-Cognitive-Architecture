@@ -18,6 +18,12 @@ The architecture is designed as a publicly accessible research foundation that c
 
 ---
 
+## Design Origin
+
+This architecture was derived from a specific design philosophy — that all existence should undergo unified evolution toward a coherent civilization. The process described here is the operational expression of that philosophy. Adopters are free to supply their own foundational intent; the architecture requires one, but does not specify its content.
+
+---
+
 ## Core Concept
 
 ```text
